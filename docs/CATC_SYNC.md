@@ -35,7 +35,7 @@ The local role mappings currently target:
 | Fabric role | Catalyst Center hostnames |
 | --- | --- |
 | Spines / RRs | `CLSJ-Spine1`, `CLSJ-Spine2` |
-| Leaves | `CLSJ03-Leaf1`, `CLSJ03-Leaf2` |
+| Leaves | `CLSJ03-Leaf1`, `CLSJ03-Leaf2`, `CLSJ03-Leaf3`, `CLSJ22-Leaf4`, `CLSJ22-Leaf5`, `CLSJ22-Leaf6` |
 | Borders | `CLSJ-BDR-1`, `CLSJ-BDR-2` |
 
 ## Update VLANs, subnets, or host roles

@@ -53,6 +53,8 @@ This repository is organized into three sections:
 ```
 README.md                            # This document
 CATC-JINJA-DICT-ITERATION-FIX.md    # Catalyst Center Jinja2 limitations and workarounds
+docs/CATC_SYNC.md                    # Local Catalyst Center sync and update runbook
+scripts/catc_template_sync.py        # Dependency-free Template Editor sync utility
 
 BGP EVPN/                            # Template source files (Jinja2)
 ├── BGP-EVPN-BUILD.yml               # Ansible helper: defines composite template member list and order
@@ -118,6 +120,10 @@ DIAGRAMS/                            # Architecture and topology diagrams
 - **DEFN files**: Pure data structures (sets and dicts); never generate CLI output
 - **FABRIC files**: CLI generators; included DEFN and FUNC files are resolved at render time
 - **FUNC files**: Reusable Jinja macros for parameterized CLI generation; included internally by FABRIC templates
+
+### Local Catalyst Center Sync
+
+For this local lab copy, use `docs/CATC_SYNC.md` and `scripts/catc_template_sync.py` to push the templates into Catalyst Center. The sync utility uploads the modular source templates and expands includes into the runtime `FABRIC-*` templates so Catalyst Center can version and provision them reliably.
 - **BGP-EVPN-BUILD.yml**: Ansible helper that defines the composite template member list and deployment order; consumed by the sync playbook to create the `BGP-EVPN-BUILD` composite in Catalyst Center
 - **Reference Configs**: Pre-rendered device configurations in `Node Configs/` for validation and troubleshooting
 

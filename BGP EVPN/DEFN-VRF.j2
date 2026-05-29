@@ -22,10 +22,10 @@
 {#   connectivity — sub-interfaces and BGP neighbors will be missing.   #}
 {# -------------------------------------------------------------------- #}
 {% set DEFN_VRF_TO_NODE = {
-  'Spine-01.dcloud.cisco.com':  ['901'],
-  'Spine-02.dcloud.cisco.com':  ['901'],
-  'Leaf-01.dcloud.cisco.com':   ['901','902','903'],
-  'Leaf-02.dcloud.cisco.com':   ['901','902','903'],
-  'Border-01.dcloud.cisco.com': ['902','903'],
-  'Border-02.dcloud.cisco.com': ['902','903']
+  'CLSJ-Spine1':   ['901'],
+  'CLSJ-Spine2':   ['901'],
+  'CLSJ03-Leaf1':  ['901','902','903'],
+  'CLSJ03-Leaf2':  ['901','902','903'],
+  'CLSJ-BDR-1':    ['902','903'],
+  'CLSJ-BDR-2':    ['902','903']
 } %}
